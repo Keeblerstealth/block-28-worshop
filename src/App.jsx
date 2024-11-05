@@ -2,6 +2,7 @@ import { Routes, Route, } from "react-router-dom";
 import Red from "./components/Red";
 import Blue from "./components/Blue";
 import { Link } from "react-router-dom";
+import Home from "./components/home";
 
 const App = () => {
 
@@ -16,7 +17,7 @@ const App = () => {
         </div>
         <div id="main-section">
           <Routes>
-            <Route path="/" element={<h2>Home</h2>} />
+            <Route path="/" element={<Home/>} />
             <Route path="/blue" element={<Blue/>} />
             <Route path="/red" element={<Red/>} />
           </Routes>
